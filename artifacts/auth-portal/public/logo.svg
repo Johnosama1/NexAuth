@@ -1,5 +1,0 @@
-<svg viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="36" height="36" x="2" y="2" rx="8" fill="#3b82f6"/>
-  <path d="M20 8L11 20h7v12l9-12h-7V8z" fill="white" stroke="white" stroke-width="0.5" stroke-linejoin="round"/>
-  <text x="46" y="26" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="18" fill="white" letter-spacing="-0.5">NexAuth</text>
-</svg>
