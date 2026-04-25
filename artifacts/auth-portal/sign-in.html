@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NexAuth - تسجيل الدخول</title>
+  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/styles.css" />
+</head>
+<body class="bg-dark">
+
+  <div class="particles" id="particles"></div>
+
+  <div class="auth-layout">
+    <!-- Sidebar (Desktop) -->
+    <aside class="auth-sidebar">
+      <div class="auth-sidebar-top">
+        <div class="navbar-brand">
+          <div class="brand-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+          </div>
+          <span class="brand-name">NexAuth</span>
+        </div>
+        <a href="index.html" class="back-btn">
+          <span class="back-btn-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+            </svg>
+          </span>
+          العودة للرئيسية
+        </a>
+      </div>
+
+      <div class="auth-sidebar-content">
+        <div>
+          <h2 class="auth-sidebar-title">
+            منصة آمنة<br />
+            <span class="shimmer-text">وسريعة الاستخدام</span>
+          </h2>
+          <p class="auth-sidebar-desc">
+            تجربة تسجيل دخول احترافية وعصرية تضمن أمان بياناتك مع سهولة الوصول من أي جهاز.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <div class="feature-title">أمان متقدم</div>
+            <div class="feature-desc">تشفير من طرف لطرف</div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <div class="feature-title">سريع للغاية</div>
+            <div class="feature-desc">تسجيل دخول فوري</div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📱</div>
+            <div class="feature-title">متوافق</div>
+            <div class="feature-desc">جميع الأجهزة</div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🌐</div>
+            <div class="feature-title">متعدد الخيارات</div>
+            <div class="feature-desc">جوجل وآبل وأكثر</div>
+          </div>
+        </div>
+
+        <div class="users-row">
+          <div class="users-avatars">
+            <span class="avatar-blue">A</span>
+            <span class="avatar-purple">B</span>
+            <span class="avatar-green">C</span>
+            <span class="avatar-red">D</span>
+          </div>
+          <div>
+            <div class="users-info-title">+50,000 مستخدم نشط</div>
+            <div class="users-info-sub">يثقون بمنصتنا يومياً</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="auth-sidebar-footer">© 2025 NexAuth. جميع الحقوق محفوظة.</div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="auth-main">
+      <div class="auth-main-inner">
+        <!-- Mobile Header -->
+        <div class="auth-mobile-header">
+          <div class="navbar-brand">
+            <div class="brand-icon" style="width:36px;height:36px;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+            </div>
+            <span class="brand-name">NexAuth</span>
+          </div>
+          <a href="index.html" class="back-btn">
+            <span class="back-btn-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+              </svg>
+            </span>
+            الرئيسية
+          </a>
+        </div>
+
+        <!-- Loading state -->
+        <div id="loading" class="loading-screen" style="min-height:auto;padding:3rem 0;">
+          <div class="spinner"></div>
+          <p class="loading-text">جارٍ التحميل...</p>
+        </div>
+
+        <!-- Clerk SignIn mount point -->
+        <div id="clerk-sign-in" class="clerk-wrapper" style="display:none;"></div>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="/src/pages/sign-in.js"></script>
+</body>
+</html>
